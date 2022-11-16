@@ -1,4 +1,100 @@
 <div class="sidebar-wrapper sidebar-theme">
+    <nav id="compactSidebar">
+        <ul class="menu-categories">
+            {{-- item de SideBar --}}
+            
+            <li class="active">
+                <a href="" class="menu-toggle" data-active="true">
+                    <div class="base-menu">
+                        <div class="base-icons">
+                            <div class="icon-container">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-users"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+                            </div>
+                        </div>
+                        <span class="text-uppercase"> Clientes </span>
+                    </div>
+                </a>
+            </li>
+
+            {{-- Item de Sidebar --}}
+            <li class="active">
+                <a href="" class="menu-toggle" data-active="true">
+                    <div class="base-menu">
+                        <div class="base-icons">
+                            <div class="icon-container">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-archive"><polyline points="21 8 21 21 3 21 3 8"></polyline><rect x="1" y="3" width="22" height="5"></rect><line x1="10" y1="12" x2="14" y2="12"></line></svg>
+                            </div>
+                        </div>
+                        <span class="text-uppercase"> Categorias </span>
+                    </div>
+                </a>
+            </li>
+
+            {{-- Item de Sidebar --}}
+            <li class="active">
+                <a href="#" data-active="false" class="menu-toggle">
+                    <div class="base-menu">
+                        <div class="base-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7.01" y2="7"></line></svg>
+                        </div>
+                        <span class="text-uppercase"> Productos </span>
+                    </div>
+                </a>
+            </li>
+
+            {{-- Item de Sidebar --}}
+            <li class="active">
+                <a href="#" data-active="false" class="menu-toggle">
+                    <div class="base-menu">
+                        <div class="base-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-shopping-cart"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
+                        </div>
+                        <span class="text-uppercase"> POS </span>
+                    </div>
+                </a>
+            </li>
+
+            {{-- Item de Sidebar --}}
+            <li class="active">
+                <a href="#" data-active="false" class="menu-toggle">
+                    <div class="base-menu">
+                        <div class="base-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline></svg>
+                        </div>
+                        <span class="text-uppercase"> Arqueos </span>
+                    </div>
+                </a>
+            </li>
+
+            {{-- Item de Sidebar --}}
+            <li class="active">
+                <a href="#" data-active="false" class="menu-toggle">
+                    <div class="base-menu">
+                        <div class="base-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clipboard"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><rect x="8" y="2" width="8" height="4" rx="1" ry="1"></rect></svg>
+                        </div>
+                        <span class="text-uppercase"> Reportes </span>
+                    </div>
+                </a>
+            </li>
+
+            {{-- Item de Sidebar --}}
+            <li class="active">
+                <a href="#" data-active="false" class="menu-toggle">
+                    <div class="base-menu">
+                        <div class="base-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clipboard"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><rect x="8" y="2" width="8" height="4" rx="1" ry="1"></rect></svg>
+                        </div>
+                        <span class="text-uppercase"> Panel SuperAdmin </span>
+                    </div>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</div>
+
+
+{{-- <div class="sidebar-wrapper sidebar-theme">
             
     <nav id="compactSidebar">
         <ul class="menu-categories">
@@ -492,4 +588,4 @@
 
     </div>
 
-</div>
+</div> --}}

@@ -16,5 +16,11 @@ class AuthController extends \TCG\Voyager\Http\Controllers\VoyagerAuthController
         }
         return Voyager::view('voyager::login');
     }
+    
+    public function redirectTo()
+    {
+        dd('Hola Mundo');
+        return config('voyager.user.redirect', route('voyager.dashboard'));
+    }
 
 }

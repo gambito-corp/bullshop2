@@ -22,7 +22,6 @@ Route::get('login', [AuthController::class, 'Login']);
 
 Route::get('home', [HomeController::class, 'index']);
 
-
 Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();
 });
