@@ -3,6 +3,8 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\PruebaController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -25,3 +27,6 @@ Route::get('home', [HomeController::class, 'index']);
 Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();
 });
+
+Route::get('prueba',[PruebaController::class, 'ActualizarCategoriasWooComerce']);
+Route::get('prueba2',[PruebaController::class, 'ActualizarProductosWooComerce']);

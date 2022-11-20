@@ -26,6 +26,16 @@ Route::get('ordenes/{id}/list', [WooComerceController::class, 'getOrdersNotes'])
 Route::get('ordenes/{id}/refund', [WooComerceController::class, 'getOrderRefunds']);
 //PRODUCTOS
 Route::get('productos', [WooComerceController::class, 'getProducts']);
+//PRODUCTOS VARIACIONES
+Route::get('productos/{id}/variations', [WooComerceController::class, 'getProductsVariations']);
+//PRODUCTOS ATRIBUTES
+Route::get('productos/attributes', [WooComerceController::class, 'getProductsAttributes']);
+//PRODUCTOS ATRIBUTES TERMS
+Route::get('productos/attributes/{id}/terms', [WooComerceController::class, 'getProductsAttributesTerms']);
 //CATEGORIAS
 Route::get('categorias', [WooComerceController::class, 'getCategory']);
+//TIPOS DE ENVIOS
+Route::get('envios/tipos', [WooComerceController::class, 'getShippingClasess']);
+//ETIQUETAS DE PRODUCTO
+Route::get('productos/etiquetas', [WooComerceController::class, 'getProductsTags']);
 

@@ -58,13 +58,53 @@ class WooComerceController extends Controller
         dd($respuesta);
     }
     
-    public static function getProducts()
+    public static function getProducts($perPage=100, $page=1)
     {
-        $respuesta = WooComerceController::Woocomerce()->get("products/attributes");
-        // $respuesta = WooComerceController::Woocomerce()->get("products");
-        dd($respuesta);
+        $respuesta = WooComerceController::Woocomerce()->get("products?per_page=$perPage&page=$page");
+        // $array = [
+        //     "id"            => '',
+        //     "name"          => '',
+        //     "wp_id"         => '',
+        //     "barcode"       => '',
+        //     "price"         => '',
+        //     "costo"         => '',
+        //     "description"   => '',
+        //     "stock"         => '',
+        //     "slug"          => '',
+        //     "type"          => '',
+        //     "status"        => '',
+        //     "marca"         => '',
+        //     "permalink"     => '',
+        //     "talla"         => '',
+        //     "imagen"        => '',
+        //     "category_id"   => '',
+        // ];
+        return $respuesta;
     }
 
+    public static function getProduct($id)
+    {
+        
+    }
+
+    public static function getProductsVariations($id)
+    {
+        $respuesta = WooComerceController::Woocomerce()->get("products/$id/variations");
+        return $respuesta;
+    }
+    
+    public static function getProductsAttributes()
+    {
+        $respuesta = WooComerceController::Woocomerce()->get("products/attributes");
+        return $respuesta;
+    }
+    
+    public static function getProductsAttributesTerms($id)
+    {
+        $respuesta = WooComerceController::Woocomerce()->get("products/attributes/$id/terms");
+        dd($respuesta);
+    }
+    
     public static function getCategory($id = '', $perPage=100, $page=1)
     {
         if($id == ''){
@@ -84,8 +124,20 @@ class WooComerceController extends Controller
             ];
             $objeto->push($array);
         }
-        dd($respuesta);
+        // dd($objeto);
         return $objeto;
+    }
+    
+    public static function getShippingClasess()
+    {
+        $respuesta = WooComerceController::Woocomerce()->get("products/shipping_classes");
+        dd($respuesta);
+    }
+    
+    public static function getProductsTags()
+    {
+        $respuesta = WooComerceController::Woocomerce()->get("products/tags");
+        dd($respuesta);
     }
    
 }

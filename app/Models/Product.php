@@ -18,8 +18,10 @@ class Product extends Model
         'description',
         'barcode',
         'price',
+        'costo',
         'stock',
         'marca',
+        'talla',
         'image',
         'category_id',
     ];
